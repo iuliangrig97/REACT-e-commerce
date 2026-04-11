@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
     >
       <img
         src={product.image}
-        alt="image"
+        alt={product.name}
         style={{ width: "250px", height: "250px", objectFit: "cover" }}
       />
       <div style={{ margin: "1rem 0" }}>
