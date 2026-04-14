@@ -116,7 +116,7 @@ export default function Auth() {
           {isAuth === "signup" ? (
             <p>
               Already have an account?
-              <span
+              <button
                 style={{
                   color: "blue",
                   marginLeft: "0.3rem",
@@ -125,12 +125,12 @@ export default function Auth() {
                 onClick={() => setIsAuth("login")}
               >
                 Login
-              </span>
+              </button>
             </p>
           ) : (
             <p>
               Don't have an account?
-              <span
+              <button
                 style={{
                   color: "red",
                   marginLeft: "0.3rem",
@@ -139,7 +139,7 @@ export default function Auth() {
                 onClick={() => setIsAuth("signup")}
               >
                 Sign up
-              </span>
+              </button>
             </p>
           )}
         </div>

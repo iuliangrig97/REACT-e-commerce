@@ -21,7 +21,6 @@ export default function Navbar() {
         {!user ? (
           <div style={{ display: "flex", gap: "1rem" }}>
             <Link to="/auth">Login</Link>
-            <Link to="/auth">Signup</Link>
           </div>
         ) : (
           <div
