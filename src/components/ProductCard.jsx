@@ -19,7 +19,7 @@ export default function ProductCard({ product }) {
         <h3 style={{ marginBottom: "0.5rem" }}>{product.name}</h3>
         <p>${product.price}</p>
         <div style={{ marginTop: "1rem", display: "flex", gap: "1rem" }}>
-          <Link style={{ padding: "1rem", backgroundColor: "gray" }}>
+          <Link to={`/products/${product.id}`} style={{ padding: "1rem", backgroundColor: "gray" }}>
             View Details
           </Link>
           <button
